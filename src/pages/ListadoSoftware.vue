@@ -1,21 +1,21 @@
 <template>
   <div>
     <NavigationTitle>
-      <!-- <template v-slot:back-button>
+      <!-- <template #back-button>
         <circle-button>
           <i class="fas fa-arrow-left"></i>
         </circle-button>
       </template> -->
 
-      <template v-slot:icon>
+      <template #icon>
         <i class="far fa-file-excel"></i>
       </template>
 
       Listado de softwares
 
-      <template v-slot:action-button>
+      <template #action-button>
         <AppButton>
-          <template v-slot:icon>
+          <template #icon>
             <i class="fas fa-plus"></i>
           </template>
           Agregar Nuevo
@@ -41,7 +41,7 @@ import { ref, onErrorCaptured } from "vue";
 import AppButton from "../components/AppButton.vue";
 // import CircleButton from "../components/CircleButton.vue";
 import NavigationTitle from "../components/NavigationTitle.vue";
-import SoftwaresTable from "../components/tables/SoftwaresTable.vue";
+import SoftwaresTable from "../components/tables/SoftwaresTable/SoftwaresTable.vue";
 export default {
   components: {
     NavigationTitle,
