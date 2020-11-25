@@ -1,15 +1,20 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/listado_software">Listado de Software</router-link>
-    </div>
+    <Header />
+    <Breadcrumb />
     <router-view />
   </div>
 </template>
 
 <script>
+import Header from "@/components/Header";
+import Breadcrumb from "@/components/Breadcrumb";
+import "./globalStyles.css";
 export default {
   name: "App",
+  components: {
+    Header,
+    Breadcrumb,
+  },
 };
 </script>

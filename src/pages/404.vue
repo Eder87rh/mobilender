@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Uups, la pagina solicitada no existe.</h1>
+    <h3>Uups, la pagina solicitada no existe.</h3>
   </div>
 </template>
 
