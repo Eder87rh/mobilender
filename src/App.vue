@@ -2,7 +2,10 @@
   <div id="app">
     <Header />
     <Breadcrumb />
-    <router-view />
+
+    <div class="content">
+      <router-view />
+    </div>
   </div>
 </template>
 
@@ -18,3 +21,12 @@ export default {
   },
 };
 </script>
+
+<style lang="css" scoped>
+.content {
+  margin: 0 auto;
+  width: 80%;
+  min-height: 100rem;
+  background-color: var(--secondary-color);
+}
+</style>

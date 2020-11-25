@@ -3,6 +3,7 @@
   --secondary-color: #171925;
   --accent-color: #78efb6;
   --white-color: #fbfcfe;
+  --grey-light-color: #f0f4f7;
   --grey-color: #757a88;
 }
 
@@ -26,7 +27,6 @@ body {
   line-height: 1.7;
   background-color: var(--primary-color);
   color: var(--grey-color);
-  /* padding: 3rem; */
 }
 
 h1 {
