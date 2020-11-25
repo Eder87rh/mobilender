@@ -22,6 +22,7 @@
         </AppButton>
       </template>
     </NavigationTitle>
+    <SoftwaresTable />
   </div>
 </template>
 
@@ -29,8 +30,13 @@
 import AppButton from "../components/AppButton.vue";
 // import CircleButton from "../components/CircleButton.vue";
 import NavigationTitle from "../components/NavigationTitle.vue";
+import SoftwaresTable from "../components/tables/SoftwaresTable.vue";
 export default {
-  components: { NavigationTitle, /* CircleButton,  */ AppButton },
+  components: {
+    NavigationTitle,
+    /* CircleButton,  */ AppButton,
+    SoftwaresTable,
+  },
   setup() {
     return {};
   },

@@ -19,7 +19,6 @@ export default {
 .button__container {
   background: none;
   color: inherit;
-  /* border: none; */
   font: inherit;
   cursor: pointer;
   outline: none;

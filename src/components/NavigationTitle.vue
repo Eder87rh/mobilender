@@ -1,19 +1,22 @@
 <template>
-  <div class="navigation-title">
-    <div class="navigation-title__section1">
-      <slot name="back-button"></slot>
-      <div class="navigation-title__icon">
-        <slot name="icon"></slot>
+  <Fragment>
+    <div class="navigation-title">
+      <div class="navigation-title__section1">
+        <slot name="back-button"></slot>
+        <div class="navigation-title__icon">
+          <slot name="icon"></slot>
+        </div>
+        <h1 class="navigation-title__title">
+          <slot />
+        </h1>
       </div>
-      <h1 class="navigation-title__title">
-        <slot />
-      </h1>
-    </div>
 
-    <div class="navigation-title__section2">
-      <slot name="action-button"></slot>
+      <div class="navigation-title__section2">
+        <slot name="action-button"></slot>
+      </div>
     </div>
-  </div>
+    <hr />
+  </Fragment>
 </template>
 
 <script>
@@ -42,5 +45,10 @@ export default {
 
 .navigation-title__icon {
   font-size: 2rem;
+}
+
+hr {
+  border: 1px solid var(--secondary-color);
+  margin-top: 2rem;
 }
 </style>
