@@ -30,7 +30,7 @@
         <SoftwaresTable />
       </template>
       <template #fallback>
-        <div>Loading...</div>
+        <loader />
       </template>
     </Suspense>
   </div>
@@ -42,11 +42,13 @@ import AppButton from "../components/AppButton.vue";
 // import CircleButton from "../components/CircleButton.vue";
 import NavigationTitle from "../components/NavigationTitle.vue";
 import SoftwaresTable from "../components/tables/SoftwaresTable/SoftwaresTable.vue";
+import Loader from "../components/Loader.vue";
 export default {
   components: {
     NavigationTitle,
     /* CircleButton,  */ AppButton,
     SoftwaresTable,
+    Loader,
   },
   setup() {
     const error = ref(null);
