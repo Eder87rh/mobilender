@@ -1,5 +1,5 @@
 <template>
-  <Fragment>
+  <div>
     <div class="navigation-title">
       <div class="navigation-title__section1">
         <slot name="back-button"></slot>
@@ -16,7 +16,7 @@
       </div>
     </div>
     <hr />
-  </Fragment>
+  </div>
 </template>
 
 <script>

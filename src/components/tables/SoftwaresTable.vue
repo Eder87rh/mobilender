@@ -30,8 +30,21 @@ import CounterSquare from "../CounterSquare.vue";
 import DataTable from "../DataTable/DataTable.vue";
 import DataTableData from "../DataTable/DataTableData.vue";
 import DataTableRow from "../DataTable/DataTableRow.vue";
+import axiosClient from "@/axiosClient";
+
 export default {
   components: { DataTableRow, DataTable, DataTableData, CounterSquare },
+  async setup() {
+    const softwaresData = await axiosClient.get("/api/unknown");
+    console.log(
+      "🚀 ~ file: SoftwaresTable.vue ~ line 39 ~ setup ~ softwaresData",
+      softwaresData
+    );
+
+    return {
+      softwaresData,
+    };
+  },
 };
 </script>
 

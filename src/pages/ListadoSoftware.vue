@@ -22,11 +22,22 @@
         </AppButton>
       </template>
     </NavigationTitle>
-    <SoftwaresTable />
+    <div v-if="error">
+      {{ error }}
+    </div>
+    <Suspense>
+      <template #default>
+        <SoftwaresTable />
+      </template>
+      <template #fallback>
+        <div>Loading...</div>
+      </template>
+    </Suspense>
   </div>
 </template>
 
 <script>
+import { ref, onErrorCaptured } from "vue";
 import AppButton from "../components/AppButton.vue";
 // import CircleButton from "../components/CircleButton.vue";
 import NavigationTitle from "../components/NavigationTitle.vue";
@@ -38,7 +49,12 @@ export default {
     SoftwaresTable,
   },
   setup() {
-    return {};
+    const error = ref(null);
+    onErrorCaptured((e) => {
+      error.value = e;
+      return true;
+    });
+    return { error };
   },
 };
 </script>
