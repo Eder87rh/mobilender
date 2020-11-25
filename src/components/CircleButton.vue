@@ -34,4 +34,8 @@ export default {
   justify-content: center;
   align-items: center;
 }
+
+.circle-button__icon {
+  font-size: 2rem;
+}
 </style>
