@@ -1,19 +1,17 @@
 <template>
   <div>
-    LISTADO SOFTWARE
+    <NavigationTitle title="Listado de softwares" />
   </div>
 </template>
 
 <script>
+import NavigationTitle from "../components/NavigationTitle.vue";
 export default {
-  setup () {
-    
-
-    return {}
-  }
-}
+  components: { NavigationTitle },
+  setup() {
+    return {};
+  },
+};
 </script>
 
-<style lang="css" scoped>
-
-</style>
+<style lang="css" scoped></style>

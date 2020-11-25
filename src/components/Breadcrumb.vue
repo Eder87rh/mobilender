@@ -16,6 +16,7 @@ export default {
 <style lang="css" scoped>
 #nav {
   margin: 3rem auto;
+  margin-top: 10rem;
   width: 80%;
   font-size: 1.2rem;
 }

@@ -21,6 +21,9 @@ export default {
 
 <style lang="css" scoped>
 #header {
+  position: fixed;
+  top: 0;
+
   display: flex;
   justify-content: center;
   width: 100%;

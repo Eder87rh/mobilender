@@ -33,3 +33,11 @@ h1 {
   color: var(--white-color);
   font-weight: 700;
 }
+
+i.fas,
+i.far,
+i.fab {
+  /* border: 1px solid red; */
+  color: var(--accent-color);
+  font-size: 2.3rem;
+}
