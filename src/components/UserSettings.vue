@@ -39,8 +39,8 @@ export default {
 }
 
 .user-settings__avatar {
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 4rem;
+  height: 4rem;
   background-color: var(--grey-light-color);
   border-radius: 50%;
   margin-left: 2rem;

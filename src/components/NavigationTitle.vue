@@ -1,16 +1,15 @@
 <template>
   <div class="navigation-title">
-    <i class="far fa-file-excel navigation-title__icon"></i>
-    <h1 class="title">{{ title }}</h1>
+    <slot name="back-button"></slot>
+    <slot name="icon"></slot>
+    <h1 class="navigation-title__title">
+      <slot />
+    </h1>
   </div>
 </template>
 
 <script>
-//import { ref } from "vue";
 export default {
-  props: {
-    title: String,
-  },
   setup() {
     return {};
   },
@@ -23,7 +22,7 @@ export default {
   align-items: center;
 }
 
-.navigation-title__icon {
-  margin-right: 1.5rem;
+.navigation-title__title {
+  margin-left: 1.5rem;
 }
 </style>

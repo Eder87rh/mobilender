@@ -27,7 +27,7 @@ export default {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 7rem;
+  height: 6.4rem;
   background-color: var(--secondary-color);
   font-size: 1.4rem;
 }
