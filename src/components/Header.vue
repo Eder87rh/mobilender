@@ -1,18 +1,20 @@
 <template>
   <header id="header">
-    <div class="container">
+    <div class="header__container">
       <h1>Integra<span class="software">Software</span></h1>
-      <div class="user-settings">
-        User settings
-      </div>
+      <UserSettings />
     </div>
   </header>
 </template>
 
 <script>
+import UserSettings from "./UserSettings";
 export default {
   setup() {
     return {};
+  },
+  components: {
+    UserSettings,
   },
 };
 </script>
@@ -24,9 +26,10 @@ export default {
   width: 100%;
   height: 7rem;
   background-color: var(--secondary-color);
+  font-size: 1.4rem;
 }
 
-.container {
+.header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
