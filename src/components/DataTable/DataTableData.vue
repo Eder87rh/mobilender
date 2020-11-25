@@ -15,5 +15,7 @@ export default {
 <style lang="css" scoped>
 .datatable-data {
   padding: 0 1rem 0 1rem;
+  display: flex;
+  align-items: center;
 }
 </style>
