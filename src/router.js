@@ -1,6 +1,7 @@
 import { createWebHistory, createRouter } from "vue-router";
 import Home from "@/pages/Home.vue";
 import ListadoSoftware from "@/pages/ListadoSoftware.vue";
+import BuscarCreditosGrupales from "@/pages/BuscarCreditosGrupales.vue";
 import NotFound from "@/pages/404.vue";
 import Login from "@/pages/Login.vue";
 
@@ -19,6 +20,11 @@ const routes = [
     path: "/listado_software",
     name: "ListadoSoftware",
     component: ListadoSoftware,
+  },
+  {
+    path: "/buscar_creditos_grupales",
+    name: "BuscarCreditosGrupales",
+    component: BuscarCreditosGrupales,
   },
   {
     path: "/:catchAll(.*)",
