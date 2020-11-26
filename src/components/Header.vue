@@ -2,13 +2,14 @@
   <header id="header">
     <div class="header__container">
       <h1>Integra<span class="software">Software</span></h1>
-      <UserSettings />
+      <UserSettings v-if="$route.name !== 'Login'" />
     </div>
   </header>
 </template>
 
 <script>
 import UserSettings from "./UserSettings";
+
 export default {
   setup() {
     return {};

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header />
-    <Breadcrumb />
+    <Breadcrumb v-if="$route.name !== 'Login'" />
 
     <div class="content">
       <router-view />

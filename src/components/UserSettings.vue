@@ -11,13 +11,14 @@
     </div>
     <div class="user-settings__options">
       <ul>
-        <li>Cerrar Sesión</li>
+        <li @click="signOut">Cerrar Sesión</li>
       </ul>
     </div>
   </div>
 </template>
 
 <script>
+import { useRouter } from "vue-router";
 import { ref, computed } from "vue";
 export default {
   setup() {
@@ -29,9 +30,17 @@ export default {
       return firstLetter + secondLetter;
     });
 
+    const router = useRouter();
+
+    function signOut() {
+      localStorage.setItem("mobilenderToken", "");
+      router.push({ name: "Login" });
+    }
+
     return {
       name,
       initials,
+      signOut,
     };
   },
 };

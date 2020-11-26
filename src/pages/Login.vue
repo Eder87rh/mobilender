@@ -106,7 +106,7 @@ export default {
   justify-content: center;
   align-items: center;
 
-  min-height: 50rem;
+  min-height: 80rem;
 }
 
 .login__container {
