@@ -1,5 +1,5 @@
 <template>
-  <button class="button__container">
+  <button class="button__container" @click="action">
     <div class="button__icon">
       <slot name="icon"></slot>
     </div>
@@ -9,6 +9,12 @@
 
 <script>
 export default {
+  props: {
+    action: {
+      type: Function,
+      default: () => null,
+    },
+  },
   setup() {
     return {};
   },

@@ -1,23 +1,24 @@
 <template>
   <div>
     <NavigationTitle>
-      Buscar créditos grupales
-
-      <template #action-button>
-        <AppButton :action="() => $router.push({ name: 'Inspeccionar' })">
-          <template #icon>
-            <i class="fas fa-search"></i>
-          </template>
-          Inspeccionar
-        </AppButton>
+      <template #back-button>
+        <circle-button>
+          <i class="fas fa-arrow-left"></i>
+        </circle-button>
       </template>
+
+      <template #icon>
+        <i class="fas fa-search"></i>
+      </template>
+
+      Inspeccionar
     </NavigationTitle>
     <div v-if="error">
       {{ error }}
     </div>
     <Suspense>
       <template #default>
-        <creditos-grupales-table />
+        <inspeccionar-table />
       </template>
       <template #fallback>
         <loader />
@@ -28,15 +29,15 @@
 
 <script>
 import { ref, onErrorCaptured } from "vue";
-import AppButton from "../components/AppButton.vue";
+import CircleButton from "../components/CircleButton.vue";
 import NavigationTitle from "../components/NavigationTitle.vue";
+import InspeccionarTable from "../components/tables/InspeccionarTable/InspeccionarTable.vue";
 import Loader from "../components/Loader.vue";
-import CreditosGrupalesTable from "../components/tables/CreditosGrupalesTable/CreditosGrupalesTable.vue";
 export default {
   components: {
     NavigationTitle,
-    AppButton,
-    CreditosGrupalesTable,
+    CircleButton,
+    InspeccionarTable,
     Loader,
   },
   setup() {
@@ -50,4 +51,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="css" scoped></style>
