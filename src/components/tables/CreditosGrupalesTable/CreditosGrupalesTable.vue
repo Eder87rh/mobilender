@@ -3,13 +3,13 @@
     <template #head>
       <thead>
         <tr>
-          <th>Archivo</th>
-          <th>Expedición</th>
-          <th>% Calidad de la información</th>
-          <th>Estatus</th>
-          <th>Finalización</th>
-          <th>Usuario</th>
-          <th>Acciones</th>
+          <th class="th-left">Archivo</th>
+          <th class="th-left">Expedición</th>
+          <th class="th-left">% Calidad de la información</th>
+          <th class="th-left">Estatus</th>
+          <th class="th-left">Finalización</th>
+          <th class="th-left">Usuario</th>
+          <th class="th-left">Acciones</th>
         </tr>
       </thead>
     </template>
@@ -53,4 +53,9 @@ export default {
 };
 </script>
 
-<style , DataTableDatalang="scss" scoped></style>
+<style lang="css" scoped>
+.th-left {
+  text-align: left;
+  padding-left: 2.5rem;
+}
+</style>
