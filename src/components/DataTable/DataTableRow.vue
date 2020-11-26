@@ -1,8 +1,6 @@
 <template>
-  <tr>
-    <div class="datatable-row">
-      <slot></slot>
-    </div>
+  <tr class="datatable-row">
+    <slot></slot>
   </tr>
 </template>
 
@@ -14,13 +12,14 @@ export default {
 };
 </script>
 
-<style lang="css" scoped>
-.datatable-row {
-  background-color: var(--secondary-color);
-  border-radius: 0.8rem;
-  padding: 1rem 2rem 1rem 2rem;
-  margin-bottom: 1rem;
+<style lang="css">
+.datatable-row > td:first-child {
+  border-radius: 1.2rem 0 0 1.2rem;
+  overflow: hidden;
+}
 
-  display: flex;
+.datatable-row > td:last-child {
+  border-radius: 0 1.2rem 1.2rem 0;
+  overflow: hidden;
 }
 </style>

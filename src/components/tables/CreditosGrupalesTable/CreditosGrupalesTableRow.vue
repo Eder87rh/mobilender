@@ -82,8 +82,8 @@ export default {
   color: rgb(211, 211, 44);
 }
 .archivo {
-  flex: 1 0 20rem;
-  font-size: 1.7rem;
+  /* flex: 1 0 20rem; */
+  font-size: 1.5rem;
   text-decoration: underline;
   cursor: pointer;
 }

@@ -1,6 +1,8 @@
 <template>
   <td class="datatable-data">
-    <slot></slot>
+    <div>
+      <slot></slot>
+    </div>
   </td>
 </template>
 
@@ -14,8 +16,7 @@ export default {
 
 <style lang="css" scoped>
 .datatable-data {
-  padding: 0 1rem 0 1rem;
-  display: flex;
-  align-items: center;
+  padding: 1.8rem 2.5rem 1.8rem 2.5rem;
+  background-color: var(--secondary-color);
 }
 </style>

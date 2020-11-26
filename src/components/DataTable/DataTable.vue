@@ -1,5 +1,6 @@
 <template>
   <table class="datatable">
+    <slot name="head"></slot>
     <slot></slot>
   </table>
 </template>
@@ -15,6 +16,7 @@ export default {
 <style lang="css" scoped>
 .datatable {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0 2rem;
 }
 </style>

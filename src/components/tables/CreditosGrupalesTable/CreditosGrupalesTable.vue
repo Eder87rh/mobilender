@@ -1,5 +1,18 @@
 <template>
   <data-table>
+    <template #head>
+      <thead>
+        <tr>
+          <th>Archivo</th>
+          <th>Expedición</th>
+          <th>% Calidad de la información</th>
+          <th>Estatus</th>
+          <th>Finalización</th>
+          <th>Usuario</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+    </template>
     <tbody>
       <creditos-grupales-table-row
         v-for="(credito, index) in creditos"
