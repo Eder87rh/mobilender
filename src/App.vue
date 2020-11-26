@@ -26,7 +26,7 @@ export default {
 .content {
   margin: 0 auto;
   width: 80%;
-  min-height: 100rem;
+  min-height: 50rem;
   font-size: 1.3rem;
   /* background-color: var(--secondary-color); */
 }
