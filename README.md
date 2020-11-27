@@ -1,24 +1,26 @@
-# mobilender
+# Prueba de programación de Mobilender
 
-## Project setup
-```
-yarn install
-```
+## Instrucciones de ejecucion
 
-### Compiles and hot-reloads for development
 ```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
+1. Ejecutar npm install o yarn install.
+2. Ejecutar npm run serve o yarn serve.
+3. visitar la url: http://localhost:8080/
+4. Introducir eve.holt@reqres.in en el campo email.
+5. Introducir cityslicka en el campo password.
+6. Hacer clic en el botón Iniciar Sesión.
+7. Navegar y probar la funcionalidad.
 ```
 
-### Lints and fixes files
+## Pruebas unitarios
+
 ```
-yarn lint
+Solo desarrollé una cuantas pruebas unitarias por falta de tiempo, pero creo que es suficiente para demostrar mis conocimientos en el tema.
+
+Las pruebas se pueden ejecutar con el comando:
+npm run test
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Eder Ramírez
+
+Te invito a ver mi [Portafolio de proyectos](https://portfolio-eder.web.app/).
