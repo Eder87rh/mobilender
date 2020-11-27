@@ -12,7 +12,7 @@ export default {
   props: {
     action: {
       type: Function,
-      default: () => null,
+      required: true,
     },
   },
   setup() {

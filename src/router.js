@@ -6,7 +6,7 @@ import Inspeccionar from "@/pages/Inspeccionar.vue";
 import NotFound from "@/pages/404.vue";
 import Login from "@/pages/Login.vue";
 
-const routes = [
+export const routes = [
   {
     path: "/",
     name: "Home",

@@ -18,7 +18,7 @@
         <error-alert v-if="error">
           {{ error }}
         </error-alert>
-        <app-button>
+        <app-button :action="() => null">
           <p>
             Iniciar Sesión
           </p>
@@ -77,14 +77,19 @@ export default {
           email: email.value,
           password: password.value,
         });
+        console.log("🚀 ~ file: Login.vue ~ line 80 ~ onSubmit ~ res", res);
 
         localStorage.setItem("mobilenderToken", res.data.token);
-        router.push({ name: "Home" });
         loading.value = false;
+        router.push({ name: "Home" });
       } catch (err) {
         console.log("🚀 ~ file: Login.vue ~ line 88 ~ onSubmit ~ err", err);
-        error.value = err.response.data.error;
+        console.log(
+          "🚀 ~ file: Login.vue ~ line 88 ~ onSubmit ~ err.response.data.error",
+          err.response.data.error
+        );
         loading.value = false;
+        error.value = err.response.data.error;
       }
     };
 
