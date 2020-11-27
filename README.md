@@ -1,6 +1,6 @@
 # Prueba de programación de Mobilender
 
-## Instrucciones de ejecucion
+## Instrucciones de ejecución
 
 ```
 1. Ejecutar npm install o yarn install.
@@ -12,10 +12,11 @@
 7. Navegar y probar la funcionalidad.
 ```
 
-## Pruebas unitarios
+## Pruebas unitarias
 
 ```
-Solo desarrollé una cuantas pruebas unitarias por falta de tiempo, pero creo que es suficiente para demostrar mis conocimientos en el tema.
+Solo desarrollé una cuantas pruebas unitarias por falta de tiempo,
+pero creo que es suficiente para demostrar mis conocimientos en el tema.
 
 Las pruebas se pueden ejecutar con el comando:
 npm run test
