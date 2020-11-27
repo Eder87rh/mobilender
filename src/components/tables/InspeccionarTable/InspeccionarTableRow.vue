@@ -1,22 +1,22 @@
 <template>
   <data-table-row>
     <data-table-data>
-      <user-avatar
-        :firstName="user.first_name"
-        :lastName="user.last_name"
-        :image="user.avatar"
-      />
-    </data-table-data>
-    <data-table-data style="flex: 0 1 20rem">
-      <h3 style="color: white;">
-        {{ fullName }}
-      </h3>
+      <div class="cliente-data">
+        <user-avatar
+          :firstName="user.first_name"
+          :lastName="user.last_name"
+          :image="user.avatar"
+        />
+        <h3 class="fullName-data">
+          {{ fullName }}
+        </h3>
+      </div>
     </data-table-data>
     <data-table-data>
       {{ user.email }}
     </data-table-data>
-    <data-table-data>
-      <i class="fas fa-chevron-right" style="color:grey"></i>
+    <data-table-data class="chevron-data">
+      <i class="fas fa-chevron-right chevron-right"></i>
     </data-table-data>
   </data-table-row>
 </template>
@@ -41,4 +41,22 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="css" scoped>
+.cliente-data {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.fullName-data {
+  color: white;
+  margin-left: 2rem;
+}
+
+.chevron-data {
+  width: 5rem;
+}
+.chevron-right {
+  color: grey;
+}
+</style>

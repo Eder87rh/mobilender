@@ -10,6 +10,7 @@
           <th class="th-left">Finalización</th>
           <th class="th-left">Usuario</th>
           <th class="th-left">Acciones</th>
+          <th class="th-left"></th>
         </tr>
       </thead>
     </template>

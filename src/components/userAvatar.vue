@@ -37,8 +37,8 @@ export default {
   height: 4rem;
   background-color: var(--grey-light-color);
   border-radius: 50%;
-  margin-left: 2rem;
-  margin-right: 1rem;
+  /* margin-left: 2rem;
+  margin-right: 1rem; */
 
   display: flex;
   justify-content: center;

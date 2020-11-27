@@ -1,19 +1,19 @@
 <template>
   <data-table-row>
+    <data-table-data style="width: 25rem">
+      <div class="software-data">
+        <counter-square>
+          {{ index }}
+        </counter-square>
+        <h3 class="software-name">
+          {{ software.name }}
+        </h3>
+      </div>
+    </data-table-data>
     <data-table-data>
-      <counter-square>
-        {{ index }}
-      </counter-square>
-    </data-table-data>
-    <data-table-data style="flex: 0 1 20rem">
-      <h3 style="color: white;">
-        {{ software.name }}
-      </h3>
-    </data-table-data>
-    <data-table-data style="flex:1">
       {{ software.type }}
     </data-table-data>
-    <data-table-data>
+    <data-table-data class="chevron-data">
       <i class="fas fa-chevron-right" style="color:grey"></i>
     </data-table-data>
   </data-table-row>
@@ -41,4 +41,19 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="css" scoped>
+.software-data {
+  display: flex;
+  align-items: center;
+  width: 25rem;
+}
+
+.software-name {
+  color: white;
+  margin-left: 2rem;
+}
+
+.chevron-data {
+  width: 5rem;
+}
+</style>
