@@ -11,6 +11,9 @@ const routes = [
     path: "/",
     name: "Home",
     component: Home,
+    meta: {
+      breadcrumb: [{ name: "Home" }],
+    },
   },
   {
     path: "/login",
@@ -21,16 +24,35 @@ const routes = [
     path: "/listado_software",
     name: "ListadoSoftware",
     component: ListadoSoftware,
+    meta: {
+      breadcrumb: [
+        { name: "Home", link: "/" },
+        { name: "Listados de softwares" },
+      ],
+    },
   },
   {
     path: "/buscar_creditos_grupales",
     name: "BuscarCreditosGrupales",
     component: BuscarCreditosGrupales,
+    meta: {
+      breadcrumb: [
+        { name: "Home", link: "/" },
+        { name: "Buscar créditos grupales" },
+      ],
+    },
   },
   {
     path: "/buscar_creditos_grupales/inspeccionar",
     name: "Inspeccionar",
     component: Inspeccionar,
+    meta: {
+      breadcrumb: [
+        { name: "Home", link: "/" },
+        { name: "Buscar créditos grupales", link: "/buscar_creditos_grupales" },
+        { name: "Inspeccionar" },
+      ],
+    },
   },
   {
     path: "/:catchAll(.*)",

@@ -43,10 +43,6 @@ export default {
   components: { DataTableRow, DataTableData },
   setup() {
     const getStatusStyleObj = (status) => {
-      console.log(
-        "🚀 ~ file: CreditosGrupalesTableRow.vue ~ line 63 ~ getStatusStyleObj ~ status",
-        status
-      );
       switch (status) {
         case "Finalizado":
           return {

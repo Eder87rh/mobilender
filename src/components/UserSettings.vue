@@ -3,7 +3,9 @@
     <div class="user-settings__name">
       {{ firstName + " " + lastName }}
     </div>
-    <user-avatar :firstName="firstName" :lastName="lastName" />
+    <div class="user-settings__avatar">
+      <user-avatar :firstName="firstName" :lastName="lastName" />
+    </div>
     <div class="user-settings__settings">
       <i class="fas fa-chevron-down" style="color:grey"></i>
     </div>
@@ -54,6 +56,9 @@ export default {
   padding: 1rem;
   position: relative;
   width: 20rem;
+}
+.user-settings__avatar {
+  margin: 0 1rem 0 1rem;
 }
 
 .user-settings:hover {
