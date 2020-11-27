@@ -2,7 +2,7 @@
   <div>
     <NavigationTitle>
       <template #back-button>
-        <circle-button>
+        <circle-button :action="() => $router.back()">
           <i class="fas fa-arrow-left"></i>
         </circle-button>
       </template>

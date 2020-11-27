@@ -1,5 +1,5 @@
 <template>
-  <div class="circle-button__container">
+  <div class="circle-button__container" @click="action">
     <div class="circle-button">
       <div class="circle-button__icon">
         <slot></slot>
@@ -10,6 +10,9 @@
 
 <script>
 export default {
+  props: {
+    action: Function,
+  },
   setup() {
     return {};
   },
@@ -19,6 +22,7 @@ export default {
 <style lang="css" scoped>
 .circle-button__container {
   position: relative;
+  cursor: pointer;
 }
 
 .circle-button {

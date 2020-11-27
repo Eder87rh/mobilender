@@ -2,7 +2,11 @@
   <header id="header">
     <div class="header__container">
       <h1>Integra<span class="software">Software</span></h1>
-      <UserSettings v-if="$route.name !== 'Login'" />
+      <UserSettings
+        v-if="$route.name !== 'Login'"
+        firstName="Eder"
+        lastName="Ramírez"
+      />
     </div>
   </header>
 </template>
