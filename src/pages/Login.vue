@@ -50,7 +50,6 @@ export default {
       return re.test(String(email).toLowerCase());
     }
 
-    // eslint-disable-next-line no-unused-vars
     function validateFields() {
       if (!email.value || !password.value) {
         console.log("Favor de completar todos los campos");
@@ -110,7 +109,6 @@ export default {
 }
 
 .login__container {
-  /* border: 2px solid var(--accent-color); */
   background-color: var(--secondary-color);
   border-radius: 0.8rem;
   padding: 6rem;
@@ -133,7 +131,6 @@ export default {
   font-size: 1.3rem;
   text-transform: uppercase;
   color: var(--white-color);
-  /* text-align: center; */
 }
 
 .control-group__input {
